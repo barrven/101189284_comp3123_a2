@@ -36,10 +36,6 @@ body{
 
 .title {
     justify-content: center;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
 }
 
 .title p {
