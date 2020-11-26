@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #282c34;
+            color: rgb(105, 104, 104);
+            font-family: sans-serif
+        }
+
+        .container {
+            height: 80vh;
+            background-color: darkgray;
+            border-color: #ffffff;
+            align-items: center;
+            border-radius: 1rem;
+            vertical-align: middle
+        }
+
+        @media(max-width:767px) {
+            .container {
+                height: fit-content
+            }
+        }
+
+        .weather {
+            width: 100%
+        }
+
+        @media(max-width:767px) {
+            .weather {
+                width: 100%
+            }
+        }
+
+        .card {
+            padding: 1rem;
+            margin: 1.5rem 4vw;
+            border-radius: 1rem;
+            background-color: white;
+            border-color: rgba(238, 237, 237, 0.22);
+            box-shadow: 5px 5px 15px 5px #666666;
+            text-align: center
+        }
+
+        @media(max-width:768px) {
+            .card {
+                margin: 1.5rem
+            }
+        }
+
+        .title {
+            justify-content: center;
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%)
+        }
+
+        .title p {
+            margin-bottom: 0.2rem;
+            font-size: 1.2rem
+        }
+
+        .temp {
+            font-size: 2.6rem;
+            margin-bottom: 1rem
+        }
+
+        .header {
+            color: #dddddd
+        }
+
+        .col-4 {
+            padding: 0 0.2rem
+        }
+
+        .icon {
+            align-self: flex-end;
+            margin-right: -2.5rem;
+            margin-top: -2rem;
+            z-index: 999
+        }
+
+        .icon img {
+            width: 5rem
+        }
+    </style>
+</head>
+<body>
+
+<div class="container d-flex justify-content-center">
+    <div class="weather">
+        <div class="card">
+            <span class="icon"><img class="img-fluid" src="http://openweathermap.org/img/wn/10d@2x.png"/></span>
+            <div class="title">
+                <p>Toronto</p>
+            </div>
+            <div class="temp">+11<sup>&deg;C</sup></div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="header">Date</div>
+                    <div class="value">Thu Nov 26 2020</div>
+                </div>
+                <div class="col-6">
+                    <div class="header">Weather Description</div>
+                    <div class="value">Overcast clouds</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
