@@ -64,7 +64,7 @@ body{
     align-self: flex-end;
     margin-right: -2.5rem;
     margin-top: -2rem;
-    z-index: 999
+    z-index: 999;
 }
 
 .icon img {

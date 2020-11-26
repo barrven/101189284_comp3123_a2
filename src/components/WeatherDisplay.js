@@ -42,7 +42,7 @@ export default class WeatherDisplay extends Component{
                                 <img alt="Weather Icon" className="img-fluid" src={iconLink}/>
                             </span>
                             <div className="title">
-                                <p>{this.state.data.name} Weather</p>
+                                <h3>{this.state.data.name} Weather</h3>
                             </div>
                             <div className="temp">{temp}<sup>&deg;C</sup></div>
                             <div className="row">
